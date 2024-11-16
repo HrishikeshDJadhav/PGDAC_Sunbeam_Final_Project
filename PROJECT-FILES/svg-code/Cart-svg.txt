@@ -1,0 +1,45 @@
+<svg viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg">
+    <!-- Cart Interaction Page (Left Side) -->
+    <g transform="translate(0,0)">
+        <!-- Background -->
+        <rect x="0" y="0" width="550" height="900" fill="#ffffff" stroke="#ccc"/>
+        
+        <!-- Title -->
+        <text x="20" y="30" font-size="16" fill="#333">Shopping Cart</text>
+        
+        <!-- Header -->
+        <rect x="20" y="50" width="510" height="60" fill="#f0f0f0" stroke="#ccc"/>
+        <rect x="30" y="60" width="80" height="40" fill="#d0d0d0"/>
+        <text x="70" y="85" font-size="14" text-anchor="middle" fill="#333">LOGO</text>
+        
+        <!-- Cart Items -->
+        <text x="20" y="140" font-size="18" fill="#333">Your Cart</text>
+        <g transform="translate(20,160)">
+            <!-- Cart Item 1 -->
+            <rect x="0" y="0" width="120" height="150" fill="#f0f0f0" stroke="#ccc"/>
+            <text x="60" y="100" text-anchor="middle" font-size="12" fill="#333">Wireless Headphones</text>
+            <text x="60" y="120" text-anchor="middle" font-size="12" fill="#666">₹79.99</text>
+            <text x="0" y="140" width="20" height="20" fill="#f8f8f8" stroke="#ccc" rx="3"/>
+            <text x="10" y="155" font-size="12" fill="#666">x1</text>
+            <!-- Cart Item 2 -->
+            <rect x="130" y="0" width="120" height="150" fill="#f0f0f0" stroke="#ccc"/>
+            <text x="190" y="100" text-anchor="middle" font-size="12" fill="#333">Smart TV</text>
+            <text x="190" y="120" text-anchor="middle" font-size="12" fill="#666">₹499.99</text>
+            <text x="130" y="140" width="20" height="20" fill="#f8f8f8" stroke="#ccc" rx="3"/>
+            <text x="140" y="155" font-size="12" fill="#666">x1</text>
+        </g>
+        
+        <!-- Subtotal and Total -->
+        <text x="20" y="400" font-size="16" fill="#333">Subtotal:</text>
+        <text x="150" y="400" font-size="16" fill="#666">₹579.98</text>
+        <text x="20" y="450" font-size="16" fill="#333">Total:</text>
+        <text x="150" y="450" font-size="16" fill="#666">₹579.98</text>
+        
+        <!-- Checkout Button -->
+        <rect x="120" y="500" width="310" height="40" fill="#333" rx="3"/>
+        <text x="275" y="525" text-anchor="middle" font-size="14" fill="#ffffff">CHECKOUT</text>
+        
+        <!-- Continue Shopping Link -->
+        <text x="215" y="600" font-size="14" fill="#666">Continue Shopping</text>
+    </g>
+</svg>

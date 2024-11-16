@@ -1,0 +1,75 @@
+erDiagram
+    Category {
+        int Category_id PK
+        varchar Category_name
+        varchar Description
+    }
+    Product {
+        int Product_id PK
+        varchar Product_name
+        float MRP
+        bool Stock
+        varchar Brand
+        int Category_CategoryID FK
+        int Seller_Seller_id FK
+    }
+    Cart {
+        int Cart_id PK
+        int Customer_Customer_id FK
+        int Product_Product_id FK
+        float GrandTotal
+        int ItemTotal
+    }
+    Customer {
+        int Customer_id PK
+        varchar FirstName
+        varchar MiddleName
+        varchar LastName
+        varchar Email
+        date DateOfBirth
+        int Phone
+        int Age
+    }
+    Address {
+        int Address_id PK
+        int Apart_no
+        varchar ApartName
+        varchar StreetName
+        varchar State
+        varchar City
+        int Pincode
+        int Customer_Customer_id FK
+    }
+    Order {
+        int Order_id PK
+        datetime Order_date
+        float Order_amount
+        datetime Shipping_Date
+        enum Order_status
+        int Cart_Cart_id FK
+        int Customer_customer_id FK
+        int Payment_Payment_id FK
+    }
+    OrderITEM {
+        int Order_Order_id FK
+        int Product_product_id FK
+        float MRP
+        int Quantity
+    }
+    Payment {
+        int Payment_id PK
+        enum Payment_method
+        float Payment_amount
+        datetime Payment_date
+        int Order_id FK
+
+        int Customer_id FK
+    }
+    Category ||--o{ Product : has
+    Product ||--o{ Cart : contains
+    Customer ||--o{ Cart : has
+    Customer ||--o{ Address : has
+    Customer ||--o{ Order : places
+    Order ||--|{ OrderITEM : contains
+    Order ||--o{ Payment : has
+    Product ||--o{ OrderITEM : includes

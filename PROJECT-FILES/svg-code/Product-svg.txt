@@ -1,0 +1,42 @@
+<svg viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg">
+    <!-- Product Page Interaction (Left Side) -->
+    <g transform="translate(0,0)">
+        <!-- Background -->
+        <rect x="0" y="0" width="550" height="900" fill="#ffffff" stroke="#ccc"/>
+        
+        <!-- Title -->
+        <text x="20" y="30" font-size="16" fill="#333">Product Details</text>
+        
+        <!-- Header -->
+        <rect x="20" y="50" width="510" height="60" fill="#f0f0f0" stroke="#ccc"/>
+        <rect x="30" y="60" width="80" height="40" fill="#d0d0d0"/>
+        <text x="70" y="85" font-size="14" text-anchor="middle" fill="#333">LOGO</text>
+        
+        <!-- Product Image -->
+        <rect x="100" y="200" width="350" height="400" fill="#f0f0f0" stroke="#ccc" rx="5"/>
+        <!--image x="100" y="200" width="350" height="400" xlink:href="product-image.jpg"/-->
+        
+        <!-- Product Information -->
+        <text x="20" y="650" font-size="18" fill="#333">Product Information</text>
+        <text x="20" y="700" font-size="14" fill="#666">Brand: Samsung</text>
+        <text x="20" y="750" font-size="14" fill="#666">Model: Galaxy S22</text>
+        <text x="20" y="800" font-size="14" fill="#666">Price: $799.99</text>
+        
+        <!-- Add to Cart Button -->
+        <rect x="120" y="850" width="310" height="40" fill="#333" rx="3"/>
+        <text x="275" y="875" text-anchor="middle" font-size="14" fill="#ffffff">ADD TO CART</text>
+        
+         <!-- Related Products -->
+        <text x="20" y="950" font-size="16" fill="#333">Related Products</text>
+        <g transform="translate(20,970)">
+            <!-- Related Product 1 -->
+            <rect x="0" y="0" width="120" height="150" fill="#f0f0f0" stroke="#ccc"/>
+            <text x="60" y="100" text-anchor="middle" font-size="12" fill="#333">Wireless Headphones</text>
+            <text x="60" y="120" text-anchor="middle" font-size="12" fill="#666">$79.99</text>
+            <!-- Related Product 2 -->
+            <rect x="130" y="0" width="120" height="150" fill="#f0f0f0" stroke="#ccc"/>
+            <text x="190" y="100" text-anchor="middle" font-size="12" fill="#333">Smart TV</text>
+            <text x="190" y="120" text-anchor="middle" font-size="12" fill="#666">₹499.99</text>
+        </g>
+    </g>
+</svg>

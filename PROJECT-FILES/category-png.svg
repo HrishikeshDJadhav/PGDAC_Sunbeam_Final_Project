@@ -1,0 +1,60 @@
+<svg viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg">
+<!-- Category Navigation (Left Side) -->
+<g transform="translate(0,0)">
+    <!-- Background -->
+    <rect x="0" y="0" width="550" height="900" fill="#ffffff" stroke="#ccc"/>
+
+    <!-- Title -->
+    <text x="20" y="30" font-size="16" fill="#333">Categories</text>
+
+    <!-- Header -->
+    <rect x="20" y="50" width="510" height="60" fill="#f0f0f0" stroke="#ccc"/>
+    <rect x="30" y="60" width="80" height="40" fill="#d0d0d0"/>
+    <text x="70" y="85" font-size="14" text-anchor="middle" fill="#333">LOGO</text>
+
+    <!-- Category List -->
+    <text x="20" y="140" font-size="18" fill="#333">Categories</text>
+    <g transform="translate(20,160)">
+        <!-- Category 1 -->
+        <rect x="0" y="0" width="165" height="120" fill="#e8e8e8" stroke="#ccc"/>
+        <text x="82.5" y="50" text-anchor="middle" font-size="16" fill="#333">Electronics</text>
+        <text x="82.5" y="70" text-anchor="middle" font-size="12" fill="#666">TVs, Laptops, Phones</text>
+        <!-- Category 2 -->
+        <rect x="175" y="0" width="165" height="120" fill="#e8e8e8" stroke="#ccc"/>
+        <text x="257.5" y="50" text-anchor="middle" font-size="16" fill="#333">Fashion</text>
+        <text x="257.5" y="70" text-anchor="middle" font-size="12" fill="#666">Clothing, Shoes, Accessories</text>
+        <!-- Category 3 -->
+        <rect x="350" y="0" width="165" height="120" fill="#e8e8e8" stroke="#ccc"/>
+        <text x="432.5" y="50" text-anchor="middle" font-size="16" fill="#333">Home &amp; Kitchen</text>
+        <text x="432.5" y="70" text-anchor="middle" font-size="12" fill="#666">Furniture, Appliances, Decor</text>
+    </g>
+
+    <!-- Subcategories -->
+    <text x="20" y="420" font-size="16" fill="#333">Subcategories: Electronics</text>
+    <g transform="translate(20,440)">
+        <!-- Subcategory 1 -->
+        <rect x="0" y="0" width="120" height="100" fill="#f0f0f0" stroke="#ccc"/>
+        <text x="60" y="40" text-anchor="middle" font-size="14" fill="#333">Smartphones</text>
+        <text x="60" y="60" text-anchor="middle" font-size="12" fill="#666">iPhone, Samsung</text>
+        <text x="60" y="80" text-anchor="middle" font-size="12" fill="#666">Google, OnePlus</text>
+
+        <!-- Subcategory 2 -->
+        <rect x="130" y="0" width="120" height="100" fill="#f0f0f0" stroke="#ccc"/>
+        <text x="190" y="40" text-anchor="middle" font-size="14" fill="#333">Laptops</text>
+        <text x="190" y="60" text-anchor="middle" font-size="12" fill="#666">MacBook, Dell</text>
+        <text x="190" y="80" text-anchor="middle" font-size="12" fill="#666">HP, Lenovo</text>
+
+        <!-- Subcategory 3 -->
+        <rect x="260" y="0" width="120" height="100" fill="#f0f0f0" stroke="#ccc"/>
+        <text x="320" y="40" text-anchor="middle" font-size="14" fill="#333">Tablets</text>
+        <text x="320" y="60" text-anchor="middle" font-size="12" fill="#666">iPad, Samsung</text>
+        <text x="320" y="80" text-anchor="middle" font-size="12" fill="#666">Lenovo, Amazon</text>
+
+        <!-- Subcategory 4 -->
+        <rect x="390" y="0" width="120" height="100" fill="#f0f0f0" stroke="#ccc"/>
+        <text x="450" y="40" text-anchor="middle" font-size="14" fill="#333">Accessories</text>
+        <text x="450" y="60" text-anchor="middle" font-size="12" fill="#666">Headphones</text>
+        <text x="450" y="80" text-anchor="middle" font-size="12" fill="#666">Chargers</text>
+    </g>
+</g>
+</svg>

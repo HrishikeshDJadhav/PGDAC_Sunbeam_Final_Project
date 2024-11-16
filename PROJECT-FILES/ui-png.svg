@@ -1,0 +1,133 @@
+<svg viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg">
+    <!-- Homepage (Left Side) -->
+    <g transform="translate(0,0)">
+        <!-- Background -->
+        <rect x="0" y="0" width="550" height="900" fill="#ffffff" stroke="#ccc"/>
+        
+        <!-- Title -->
+        <text x="20" y="30" font-size="16" fill="#333">Homepage -  E-commerce</text>
+        
+        <!-- Header -->
+        <rect x="20" y="50" width="510" height="60" fill="#f0f0f0" stroke="#ccc"/>
+        <rect x="30" y="60" width="80" height="40" fill="#d0d0d0"/>
+        <text x="70" y="85" font-size="14" text-anchor="middle" fill="#333">LOGO</text>
+        <rect x="180" y="65" width="200" height="30" fill="#e0e0e0"/>
+        <text x="280" y="85" font-size="12" text-anchor="middle" fill="#666">Search products...</text>
+        <rect x="400" y="65" width="40" height="30" fill="#d0d0d0"/>
+        <text x="420" y="85" font-size="12" text-anchor="middle" fill="#333">🛒</text>
+        <rect x="450" y="65" width="60" height="30" fill="#d0d0d0"/>
+        <text x="480" y="85" font-size="12" text-anchor="middle" fill="#333">Login</text>
+        
+        <!-- Navigation -->
+        <rect x="20" y="120" width="510" height="40" fill="#e8e8e8" stroke="#ccc"/>
+        <text x="75" y="145" font-size="12" text-anchor="middle" fill="#333">Electronics</text>
+        <text x="155" y="145" font-size="12" text-anchor="middle" fill="#333">Apparel</text>
+        <text x="235" y="145" font-size="12" text-anchor="middle" fill="#333">Home</text>
+        <text x="315" y="145" font-size="12" text-anchor="middle" fill="#333">Beauty</text>
+        <text x="395" y="145" font-size="12" text-anchor="middle" fill="#333">Sports</text>
+        
+        <!-- Hero Banner -->
+        <rect x="20" y="170" width="510" height="250" fill="#e0e0e0" stroke="#ccc"/>
+        <text x="275" y="280" text-anchor="middle" font-size="24" fill="#333">Big Sale Event</text>
+        <text x="275" y="310" text-anchor="middle" font-size="16" fill="#666">Up to 50% off on selected items</text>
+        <rect x="225" y="330" width="100" height="30" fill="#333" rx="5"/>
+        <text x="275" y="350" text-anchor="middle" font-size="12" fill="#fff">SHOP NOW</text>
+        
+        <!-- Featured Products -->
+        <text x="20" y="450" font-size="18" fill="#333">Featured Products</text>
+        <g transform="translate(20,470)"> <!-- Products Grid -->
+            <!-- Product 1 -->
+            <rect x="0" y="0" width="120" height="150" fill="#f0f0f0" stroke="#ccc"/>
+            <text x="60" y="100" text-anchor="middle" font-size="12" fill="#333">Wireless Headphones</text>
+            <text x="60" y="120" text-anchor="middle" font-size="12" fill="#666">₹79.99</text>
+            <!-- Product 2 -->
+            <rect x="130" y="0" width="120" height="150" fill="#f0f0f0" stroke="#ccc"/>
+            <text x="190" y="100" text-anchor="middle" font-size="12" fill="#333">Smart TV</text>
+            <text x="190" y="120" text-anchor="middle" font-size="12" fill="#666">₹499.99</text>
+            <!-- Product 3 -->
+            <rect x="260" y="0" width="120" height="150" fill="#f0f0f0" stroke="#ccc"/>
+            <text x="320" y="100" text-anchor="middle" font-size="12" fill="#333">Running Shoes</text>
+            <text x="320" y="120" text-anchor="middle" font-size="12" fill="#666">₹59.99</text>
+            <!-- Product 4 -->
+            <rect x="390" y="0" width="120" height="150" fill="#f0f0f0" stroke="#ccc"/>
+            <text x="450" y="100" text-anchor="middle" font-size="12" fill="#333">Coffee Maker</text>
+            <text x="450" y="120" text-anchor="middle" font-size="12" fill="#666">₹99.99</text>
+        </g>
+        
+        <!-- Categories Section -->
+        <text x="20" y="660" font-size="18" fill="#333">Shop by Category</text>
+        <g transform="translate(20,680)">
+            <!-- Category 1 -->
+            <rect x="0" y="0" width="165" height="120" fill="#e8e8e8" stroke="#ccc"/>
+            <text x="82.5" y="50" text-anchor="middle" font-size="16" fill="#333">Electronics</text>
+            <text x="82.5" y="70" text-anchor="middle" font-size="12" fill="#666">TVs, Laptops, Phones</text>
+            <!-- Category 2 -->
+            <rect x="175" y="0" width="165" height="120" fill="#e8e8e8" stroke="#ccc"/>
+            <text x="257.5" y="50" text-anchor="middle" font-size="16" fill="#333">Fashion</text>
+            <text x="257.5" y="70" text-anchor="middle" font-size="12" fill="#666">Clothing, Shoes, Accessories</text>
+            <!-- Category 3 -->
+            <rect x="350" y="0" width="165" height="120" fill="#e8e8e8" stroke="#ccc"/>
+            <text x="432.5" y="50" text-anchor="middle" font-size="16" fill="#333">Home and Kitchen</text>
+            <text x="432.5" y="70" text-anchor="middle" font-size="12" fill="#666">Furniture, Appliances, Decor</text>
+        </g>
+        
+        <!-- Footer -->
+        <rect x="20" y="830" width="510" height="50" fill="#f0f0f0" stroke="#ccc"/>
+        <text x="80" y="860" font-size="12" fill="#666">About</text>
+        <text x="190" y="860" font-size="12" fill="#666">Contact</text>
+        <text x="300" y="860" font-size="12" fill="#666">Shipping</text>
+        <!-- <text x="370" y="860" font-size="12" fill="#666">Returns</text> -->
+        <text x="450" y="860" font-size="12" fill="#666">FAQ</text>
+    </g>
+
+    <!-- Login Page (Right Side) -->
+    <g transform="translate(600,0)">
+        <!-- Background -->
+        <rect x="0" y="0" width="550" height="900" fill="#ffffff" stroke="#ccc"/>
+        
+        <!-- Title -->
+        <text x="20" y="30" font-size="16" fill="#333">Login - General E-commerce</text>
+        
+        <!-- Header -->
+        <rect x="20" y="50" width="510" height="60" fill="#f0f0f0" stroke="#ccc"/>
+        <rect x="30" y="60" width="80" height="40" fill="#d0d0d0"/>
+        <text x="70" y="85" font-size="14" text-anchor="middle" fill="#333">LOGO</text>
+        
+        <!-- Login Box -->
+        <rect x="100" y="200" width="350" height="400" fill="#ffffff" stroke="#ccc" rx="5"/>
+        
+        <!-- Login Form Elements -->
+        <text x="275" y="250" text-anchor="middle" font-size="24" fill="#333">Welcome Back</text>
+        <text x="275" y="275" text-anchor="middle" font-size="14" fill="#666">Login to your account</text>
+        
+        <!-- Email Input -->
+        <text x="120" y="290" font-size="14" fill="#666">Email</text>
+        <rect x="120" y="300" width="310" height="40" fill="#f8f8f8" stroke="#ccc" rx="3"/>
+        <text x="135" y="325" font-size="12" fill="#999">example@email.com</text>
+        
+        <!-- Password Input -->
+        <text x="120" y="370" font-size="14" fill="#666">Password</text>
+        <rect x="120" y="380" width="310" height="40" fill="#f8f8f8" stroke="#ccc" rx="3"/>
+        <text x="135" y="405" font-size="12" fill="#999">••••••••</text>
+        
+        <!-- Remember Me -->
+        <rect x="120" y="440" width="15" height="15" fill="#f8f8f8" stroke="#ccc"/>
+        <text x="145" y="452" font-size="12" fill="#666">Remember me</text>
+        <text x="330" y="452" font-size="12" fill="#0066cc">Forgot Password?</text>
+        
+        <!-- Login Button -->
+        <rect x="120" y="480" width="310" height="40" fill="#333" rx="3"/>
+        <text x="275" y="505" text-anchor="middle" font-size="14" fill="#ffffff">LOGIN</text>
+        
+        <!-- Sign Up Link -->
+        <text x="160" y="550" font-size="14" fill="#666">Don't have an account?</text>
+        <text x="330" y="550" font-size="14" fill="#0066cc">Sign up</text>
+        
+        <!-- Social Login -->
+        <text x="275" y="590" text-anchor="middle" font-size="14" fill="#666">Or continue with</text>
+        <rect x="120" y="620" width="150" height="40" fill="#f8f8f8" stroke="#ccc" rx="3"/>
+        <text x="195" y="645" text-anchor="middle" font-size="14" fill="#333">Google</text>
+        <rect x="280" y="620" width="150" height="40" fill="#f8f8f8" stroke="#ccc" rx="3"/>
+        <text x="355" y="645" text-anchor="middle" font-size="14" fill="#333">Facebook</text>
+    </g>
+</svg>

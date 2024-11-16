@@ -1,0 +1,86 @@
+erDiagram
+    Category {
+        int Category_id PK
+        varchar Category_name
+        varchar Description
+    }
+    Product {
+        int Product_id PK
+        varchar Product_name
+        float Base_price
+        bool Stock_status
+        varchar Brand
+        int Category_id FK
+        int Seller_id FK
+    }
+    CartHeader {
+        int Cart_id PK
+        int Customer_id FK
+        datetime Created_at
+        float Grand_total
+    }
+    CartItem {
+        int CartItem_id PK
+        int Cart_id FK
+        int Product_id FK
+        int Quantity
+        float Unit_price
+        float Item_total
+    }
+    Customer {
+        int Customer_id PK
+        varchar First_name
+        varchar Middle_name
+        varchar Last_name
+        varchar Email
+        date Date_of_birth
+        varchar Phone
+    }
+    Address {
+        int Address_id PK
+        int Apart_no
+        varchar Apart_name
+        varchar Street_name
+        varchar State
+        varchar City
+        int Pincode
+        int Customer_id FK
+        bool Is_default
+    }
+    OrderHeader {
+        int Order_id PK
+        datetime Order_date
+        float Order_amount
+        datetime Shipping_date
+        enum Order_status
+        int Customer_id FK
+        int Shipping_address_id FK
+        int Payment_id FK
+    }
+    OrderItem {
+        int OrderItem_id PK
+        int Order_id FK
+        int Product_id FK
+        float Unit_price
+        int Quantity
+        float Item_total
+    }
+    Payment {
+        int Payment_id PK
+        enum Payment_method
+        float Payment_amount
+        datetime Payment_date
+        varchar Transaction_id
+        enum Payment_status
+        int Customer_id FK
+    }
+
+    Category ||--o{ Product : has
+    Product ||--o{ CartItem : contains
+    CartHeader ||--|{ CartItem : contains
+    Customer ||--o{ CartHeader : has
+    Customer ||--o{ Address : has
+    Customer ||--o{ OrderHeader : places
+    OrderHeader ||--|{ OrderItem : contains
+    OrderHeader ||--o{ Payment : has
+    Product ||--o{ OrderItem : includes

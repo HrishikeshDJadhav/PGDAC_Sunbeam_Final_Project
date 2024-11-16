@@ -1,0 +1,89 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'fontFamily': 'arial', 'background': '#ffffff', 'primaryColor': '#f0f0f0', 'primaryBorderColor': '#000000', 'lineColor': '#000000', 'textColor': '#000000' }}}%%
+graph TB
+    %% Style definitions
+    classDef entity fill:#f0f0f0,stroke:black,stroke-width:2px
+    classDef attribute fill:#f0f0f0,stroke:black,stroke-width:1px
+    classDef relationship fill:#f0f0f0,stroke:black,stroke-width:1px
+    
+    %% Main Entities
+    Customer(["Customer"])
+    Category(["Category"])
+    Product(["Product"])
+    Cart(["Cart"])
+    Order(["Order"])
+    OrderITEM(["OrderITEM"])
+    Address(["Address"])
+    Payment(["Payment"])
+    
+    %% Customer Attributes
+    Customer --- CustomerID((CustomerID))
+    Customer --- Name((Name))
+    Customer --- Email((Email))
+    Customer --- Gender((Gender))
+    Customer --- DOB((DateOfBirth))
+    Customer --- Mobile((Mobile))
+    Customer --- Password((Password))
+    
+    %% Category Attributes
+    Category --- CategoryID((CategoryID))
+    Category --- CategoryName((Category_name))
+    Category --- Description((Description))
+    
+    %% Product Attributes
+    Product --- ProductID((ProductID))
+    Product --- ProductName((Product_name))
+    Product --- MRP((MRP))
+    Product --- Stock((Stock))
+    Product --- Brand((Brand))
+    
+    %% Cart Attributes
+    Cart --- CartID((CartID))
+    Cart --- GrandTotal((GrandTotal))
+    Cart --- ItemTotal((ItemTotal))
+    
+    %% Order Attributes
+    Order --- OrderID((OrderID))
+    Order --- OrderDate((Order_date))
+    Order --- OrderAmount((Order_amount))
+    Order --- ShippingDate((Shipping_Date))
+    Order --- OrderStatus((Order_status))
+    
+    %% OrderITEM Attributes
+    OrderITEM --- OrderItemID((OrderItem_id))
+    OrderITEM --- Quantity((Quantity))
+    OrderITEM --- ItemMRP((MRP))
+    
+    %% Address Attributes
+    Address --- AddressID((AddressID))
+    Address --- HouseNo((House_no))
+    Address --- StreetName((StreetName))
+    Address --- State((State))
+    Address --- City((City))
+    Address --- Pincode((Pincode))
+    
+    %% Payment Attributes
+    Payment --- PaymentID((PaymentID))
+    Payment --- Amount((Amount))
+    Payment --- PaymentDate((PaymentDate))
+    Payment --- PaymentStatus((PaymentStatus))
+    Payment --- TransactionID((TransactionID))
+    Payment --- PaymentType((PaymentType))
+    
+    %% Relationships with light gray background diamonds
+    Customer --- HasAddr{"has"} --- Address
+    Customer --- PlacesOrd{"places"} --- Order
+    Customer --- HasCart{"has"} --- Cart
+    Cart --- ContainsProd{"contains"} --- Product
+    Order --- ContainsItem{"contains"} --- OrderITEM
+    Product --- IncludesProd{"includes"} --- OrderITEM
+    Category --- HasCat{"has"} --- Product
+    Order --- HasPayment{"has"} --- Payment
+    
+    %% Apply styles
+    linkStyle default stroke:#000000
+    class Customer,Address,Order,Cart,Product,Category,OrderITEM,Payment entity
+    class CustomerID,Name,Email,Gender,DOB,Mobile,Password,AddressID,HouseNo,StreetName,State,City,Pincode,OrderID,OrderDate,OrderAmount,ShippingDate,OrderStatus,CartID,GrandTotal,ItemTotal,ProductID,ProductName,MRP,Stock,Brand,CategoryID,CategoryName,Description,OrderItemID,Quantity,ItemMRP,PaymentID,Amount,PaymentDate,PaymentStatus,TransactionID,PaymentType attribute
+    class HasAddr,PlacesOrd,HasCart,ContainsProd,ContainsItem,IncludesProd,HasCat,HasPayment relationship
+    
+    %% Layout direction
+    direction TB
