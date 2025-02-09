@@ -182,7 +182,7 @@ export default function ProductDetails() {
                   ₹{customersProduct.product?.price}
                 </p>
                 <p className="text-green-600 font-semibold">
-                  {customersProduct.product?.discountPercent}% Off
+                  {customersProduct.product?.discountPersent}% Off
                 </p>
               </div>
 
