@@ -38,7 +38,7 @@ const CartItem = ({ item,showButton }) => {
               ₹{item?.product.discountedPrice}
             </p>
             <p className="text-green-600 font-semibold">
-              {item?.product.discountPersent}% off
+              {item?.product.discountPercent}% off
             </p>
           </div>
         </div>
