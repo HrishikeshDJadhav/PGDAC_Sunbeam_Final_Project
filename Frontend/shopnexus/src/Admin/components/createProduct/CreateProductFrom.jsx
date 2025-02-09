@@ -31,7 +31,7 @@ const CreateProductForm = () => {
     color: "",
     discountedPrice: "",
     price: "",
-    discountPercent: "",
+    discountPersent: "",
     size: initialSizes,
     quantity: "",
     topLavelCategory: "",
@@ -158,8 +158,8 @@ const jwt=localStorage.getItem("jwt")
             <TextField
               fullWidth
               label="Discount Percentage"
-              name="discountPercent"
-              value={productData.discountPercent}
+              name="discountPersent"
+              value={productData.discountPersent}
               onChange={handleChange}
               type="number"
             />
