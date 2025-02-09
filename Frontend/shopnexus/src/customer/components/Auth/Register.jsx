@@ -87,9 +87,13 @@ useEffect(()=>{
           id="demo-simple-select"
           label="Role"
           name="role"
+
           required
         >
           {/* <MenuItem value={"ROLE_ADMIN"}>Admin</MenuItem> */}
+
+      
+
           <MenuItem value={"ROLE_CUSTOMER"}>Customer</MenuItem>
         </Select>
       </FormControl>
@@ -122,7 +126,11 @@ useEffect(()=>{
 
 <div className="flex justify-center flex-col items-center">
      <div className="py-3 flex items-center ">
+
         <p className="m-0 p-0">if you already have an account ?</p>
+
+        
+
         <Button onClick={()=> navigate("/login")} className="ml-5" size="small">
           Login
         </Button>
