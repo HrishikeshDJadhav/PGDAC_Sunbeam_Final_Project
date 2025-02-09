@@ -3,7 +3,7 @@ import "./ProductCard.css";
 import{useLocation, useNavigate} from "react-router-dom";
 
 const ProductCard = ({ product }) => {
-  const { title, brand, imageUrl, price ,discountedPrice,color,discountPercent} = product;
+  const { title, brand, imageUrl, price ,discountedPrice,color,discountPersent} = product;
   const navigate= useNavigate();
   
   // console.log("product",product)
@@ -28,7 +28,7 @@ const ProductCard = ({ product }) => {
         <div className='flex space-x-2 items-center'>
             <p className='font-semibold'>₹{discountedPrice}</p>
             <p className='opacity-50 line-through'>₹{price}</p>
-            <p className='text-green-600 font-semibold'>{discountPercent}% off</p>
+            <p className='text-green-600 font-semibold'>{discountPersent}% off</p>
         </div>
         
     </div>
